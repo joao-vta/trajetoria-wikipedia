@@ -4,7 +4,7 @@
 Trajetoria Wikipedia é um site que descobre a trajetória mais curta entre duas páginas da wikipédia em português. Ele faz uso de dados pré processados para executar um algoritmo de BFS nas páginas da wikipédia.
 
 # Motivo
-O site ajuda procura ajduar na elaboração e competição do jogo **["WikiRacing"]**.
+O site ajuda procura ajduar na composição e competição do jogo **["WikiRacing"]**.
 
 # Fonte dos dados
 A wikipédia disponibiliza um datadump de todos os seus dados em diferentes formatos no endereço https://dumps.wikimedia.org/ptwiki/  
