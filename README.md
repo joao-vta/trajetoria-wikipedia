@@ -1,5 +1,5 @@
 # Trajetoria Wikipedia 
-![alt text](https://github.com/joao-vta/trajetoria-wikipedia/blob/main/imgs/wikipedia.ai?raw=true)
+![alt text](https://github.com/joao-vta/trajetoria-wikipedia/blob/main/imgs/wikipedia-logo.jpg?raw=true)
 Trajetoria Wikipedia é um site que descobre a trajetória mais curta entre duas páginas da wikipédia em português. Ele faz uso de dados pré processados para executar um algoritmo de BFS nas páginas da wikipédia.
 
 # Motivo
