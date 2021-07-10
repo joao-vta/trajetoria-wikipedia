@@ -7,10 +7,11 @@ Trajetoria Wikipedia é um site que descobre a trajetória mais curta entre duas
 O site ajuda procura ajduar na composição e competição do jogo **["WikiRacing"]**.
 
 # Fonte dos dados
-A wikipédia disponibiliza um datadump de todos os seus dados em diferentes formatos no endereço https://dumps.wikimedia.org/ptwiki/  
+A wikipédia disponibiliza um **["datadump"]** da maioria dos dados para uso livre. Dados omitidos incluem imagens e áudios propretários. 
 
 # Inspiração  
 O projeto **["six degrees of wikipédia"]** de Jacob Wenger faz algo similar e foi de grande inspiração, porém fez uso de infraestrutura e investimento que esse projeto não possui, portanto utilizou meios diferentes para atacar o problema. Além disso, Ele é limitado a wikipédia em inglês.
 
 ["six degrees of wikipédia"]: https://github.com/jwngr/sdow
 ["WikiRacing"]: https://en.wikipedia.org/wiki/Wikiracing
+["datadump"]: https://dumps.wikimedia.org/ptwiki/
