@@ -11,4 +11,4 @@ A wikipédia disponibiliza um datadump de todos os seus dados em diferentes form
 
 # Inspiração
 - https://github.com/jwngr/sdow  
-O projeto de Jacob Wenger faz algo similar na wikipédia em inglês, porém com métodos diferentes.
+O projeto "six degrees of wikipédia" de Jacob Wenger faz algo similar e foi de grande inspiração, porém fez uso de infraestrutura e investimento que esse projeto não possui, portanto utilizou meios diferentes para atacar o problema. Além disso, Ele é limitado a wikipédia em inglês.
