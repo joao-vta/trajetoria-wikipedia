@@ -9,6 +9,7 @@ Nenhum muito bom
 # Fonte dos dados
 A wikipédia disponibiliza um datadump de todos os seus dados em diferentes formatos no endereço https://dumps.wikimedia.org/ptwiki/  
 
-# Inspiração
-- https://github.com/jwngr/sdow  
-O projeto "six degrees of wikipédia" de Jacob Wenger faz algo similar e foi de grande inspiração, porém fez uso de infraestrutura e investimento que esse projeto não possui, portanto utilizou meios diferentes para atacar o problema. Além disso, Ele é limitado a wikipédia em inglês.
+# Inspiração  
+O projeto **["six degrees of wikipédia"]** de Jacob Wenger faz algo similar e foi de grande inspiração, porém fez uso de infraestrutura e investimento que esse projeto não possui, portanto utilizou meios diferentes para atacar o problema. Além disso, Ele é limitado a wikipédia em inglês.
+
+["six degrees of wikipédia"]: https://github.com/jwngr/sdow
