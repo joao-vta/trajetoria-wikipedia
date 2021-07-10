@@ -5,9 +5,8 @@ Trajetoria Wikipedia é um site que descobre a trajetória mais curta entre duas
 Nenhum muito bom
 
 # Fonte dos dados
-A wikipédia disponibiliza um datadump de seus dados em diferentes formatos no endereço https://dumps.wikimedia.org/ptwiki/
-Esse f
+A wikipédia disponibiliza um datadump de todos os seus dados em diferentes formatos no endereço https://dumps.wikimedia.org/ptwiki/  
 
 # Inspiração
-- https://github.com/jwngr/sdow
+- https://github.com/jwngr/sdow  
 O projeto de Jacob Wenger faz algo similar na wikipédia em inglês, porém com métodos diferentes.
