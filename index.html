@@ -1,10 +1,80 @@
 <!DOCTYPE html>
 <html>
-<body>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<h1>Wikipedia Percurso</h1>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<button type="button" onclick="alert('Hello world!')">Click Me!</button>
- 
-</body>
+        <!--Jquery-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+        
+        <!--pako-->
+         <script type="text/javascript" src="libs/pako.js"></script>
+        <!-- https://www.freepik.com/photos/background Background photo created by kjpargeter - www.freepik.com-->
+        <title> Wikipedia trajetoria </title>
+        <style>
+            .titulo {
+                color: Cyan;
+                text-align: center;
+                font-family: Snell Roundhan;
+                font-size: 4vw;
+            }
+
+            body {
+                background: url(imgs/bg.jpg) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+
+            #res {
+                font-size: 5vw;
+                color: red;
+            }
+
+        </style>
+        <script>
+            var magicEndpoint = "https://574i3vnyuk.execute-api.sa-east-1.amazonaws.com/default/testFunction"
+
+            function logNeigh() {
+                let inicialVal = document.getElementById("inicial").value;
+                let endVal = document.getElementById("final").value;
+                if((inicialVal) && (endVal)){
+                    var names = {};
+                    names['startName'] = inicialVal;
+                    names['endName'] = endVal;
+                    let pathReq = new XMLHttpRequest();
+                    pathReq.onload = function(){
+                        document.getElementById("res").innerHTML = pathReq.responseText;
+                        console.log(pathReq.responseText);
+                    }
+                    pathReq.open("POST", magicEndpoint, true);
+                    
+                    console.log(JSON.stringify(names))
+                    pathReq.send(JSON.stringify(names));
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+
+        <div class="col text-center">
+            <h1 class="titulo text-center">Trajetória Na Wikipédia</h1>
+
+            <div class="form-group form-check-inline">
+                <input id="inicial" class="pagina form-control form-control-lg" type="text" placeholder="Pagina Inicial">
+                <input id="final" class="pagina form-control form-control-lg" type="text" placeholder="Pagina Final">
+            </div><br>
+            
+            <button type="button" onclick="logNeigh()" class="text-center btn btn-info">Determinar caminho</button>
+        </div>
+        <p class="text-center" id="res"></p>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
 </html>
