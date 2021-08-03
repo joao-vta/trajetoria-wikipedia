@@ -44,12 +44,14 @@
                 let inicialVal = document.getElementById("inicial").value;
                 let endVal = document.getElementById("final").value;
                 if((inicialVal) && (endVal)){
+                    let holder = document.getElementById("res")
+                    holder.innerHTML = "Traçando Trajetoria"
                     var names = {};
                     names['startName'] = inicialVal;
                     names['endName'] = endVal;
                     let pathReq = new XMLHttpRequest();
                     pathReq.onload = function(){
-                        document.getElementById("res").innerHTML = pathReq.responseText;
+                        holder.innerHTML = pathReq.responseText;
                         console.log(pathReq.responseText);
                     }
                     pathReq.open("POST", magicEndpoint, true);
