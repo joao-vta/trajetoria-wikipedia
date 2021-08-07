@@ -1,0 +1,30 @@
+.titulo {
+    color: Cyan;
+    text-align: center;
+    font-family: Snell Roundhan;
+    font-size: 4vw;
+}
+
+button {
+    color: rgb(94, 185, 228);
+    font-size: 2vw;
+    margin-left: 5%;
+}
+
+body {
+    background: url(imgs/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#box {
+    width: 50%;
+    height: 30%;;
+}
+
+#res a{
+    font-size: 5vw;
+    color: red;
+}
