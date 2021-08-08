@@ -19,12 +19,42 @@ body {
     background-size: cover;
 }
 
+.alert {
+    width: 40%;
+    height: 30%;
+}
+
 #box {
     width: 50%;
     height: 30%;;
 }
 
-#res a{
-    font-size: 5vw;
-    color: red;
+#res {
+    margin-top: 4%;
+}
+
+#res p{
+    height: 7%;
+    margin: auto;
+    margin-top: 2%;
+    display: inline-block;
+}
+
+#res img{
+    width: 6%;
+}
+
+.linkEnclosure {
+    height: 100px;
+    width: 100px;
+    display: inline;
+}
+
+.linkEnclosure a{
+    font-size: 3vw;
+    color: rgb(182, 101, 9);
+    border: solid rgb(94, 185, 228);
+    background-color: rgb(94, 185, 228);
+
+    border-radius: 250px;
 }

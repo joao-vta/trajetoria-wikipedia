@@ -6,7 +6,7 @@ function findPath() {
     let endVal = document.getElementById("Pagina Final").value;
     if((inicialVal) && (endVal)){
         let holder = document.getElementById("res")
-        holder.innerHTML = "<a>Traçando Trajetória</a>"
+        holder.innerHTML = "<p class='alert alert-info'>Traçando Trajetória</p><img src='imgs/loading2.gif'/>"
         let names = {};
         names['startName'] = inicialVal;
         names['endName'] = endVal;
@@ -16,7 +16,7 @@ function findPath() {
                 console.log("failure");
                 console.log(pathReq.response);
                 console.log(pathReq.responseText);
-                holder.innerHTML = "<a>Não foi possivel achar um caminho</a>";
+                holder.innerHTML = "<p class = 'alert alert-danger'>Não foi possivel achar um caminho</p>";
                 return;
             }
             else{
@@ -25,14 +25,13 @@ function findPath() {
                 console.log(results);
 
                 if (results == 'ERROR name not in dabatase'){
-                    holder.innerHTML = "<a>Uma das paginas não existe</a>"
+                    holder.innerHTML = "<p class = 'alert alert-danger'>Uma das paginas não existe</p>"
                 }
                 else{
-                    holder.innerHTML = "->";
+                    holder.innerHTML = "";
                     results.forEach(function(item, index) {
-                        holder.innerHTML += '<a target="_blank" href="' + baseAddr + item + '"> ' + item + '</a>'; 
+                        holder.innerHTML += '<div class="linkEnclosure"><a target="_blank" href="' + baseAddr + item + '"> ' + item + '</a></div>'; 
                     })
-                    holder.innerHTML += "<-";
                 }
     
             }
