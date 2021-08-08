@@ -47,12 +47,14 @@ function findPath() {
 function updatePage(source, label) {
     if(source.value == "") {
         label.innerHTML = source.id;
+        label.disabled = true;
     }
     else{
+        label.disabled = false;
         label.innerHTML = source.value;
-    }
-    label.onclick = function(){
-        window.open(baseAddr+source.value, "_blank").focus();
+        label.onclick = function(){
+            window.open(baseAddr+source.value, "_blank").focus();
+        }
     }
 }
 
