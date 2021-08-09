@@ -6,8 +6,9 @@ import json
 startID = 0
 
 '''
-The function find_path is executed on a lambda function on aws every time 
-a path needs to be found
+The function find_path is executed on AWS serves every time 
+a path needs to be found. The start and end pages are specified
+in the body of the request.
 '''
     
 def makeConnection(oneNode, otherNode, cursor):
