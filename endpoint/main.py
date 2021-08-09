@@ -5,6 +5,10 @@ import json
 
 startID = 0
 
+'''
+The function find_path is executed on a lambda function on aws every time 
+a path needs to be found
+'''
     
 def makeConnection(oneNode, otherNode, cursor):
     try:
